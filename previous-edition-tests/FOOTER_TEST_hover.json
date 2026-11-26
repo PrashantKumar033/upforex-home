@@ -1,0 +1,55 @@
+{
+  ".footer-social-link": {
+    "hover": {
+      "active": true,
+      "angle": "",
+      "light": null,
+      "x": "",
+      "move": "1.43px"
+    },
+    "reset": "PASS"
+  },
+  ".footer-link-group": {
+    "hover": {
+      "active": true,
+      "angle": "",
+      "light": "0.42",
+      "x": "72.00%",
+      "move": ""
+    },
+    "reset": "PASS"
+  },
+  ".footer-reg-card": {
+    "hover": {
+      "active": true,
+      "angle": "0.652deg",
+      "light": "1",
+      "x": "72.00%",
+      "move": ""
+    },
+    "reset": "PASS"
+  },
+  ".premium-footer .review-card": {
+    "hover": {
+      "active": true,
+      "angle": "1.356deg",
+      "light": "1",
+      "x": "72.00%",
+      "move": ""
+    },
+    "reset": "PASS"
+  },
+  ".footer-trust-strip": {
+    "hover": {
+      "active": true,
+      "angle": "",
+      "light": "1",
+      "x": "72.00%",
+      "move": ""
+    },
+    "reset": "PASS"
+  },
+  "pause": "PASS",
+  "resume": "PASS",
+  "reduced_motion": "PASS"
+}

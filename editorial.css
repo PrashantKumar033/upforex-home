@@ -1,0 +1,91 @@
+/* UPFOREX Vision Editorial: enhanced imagery, standalone client reviews, and newest articles.
+   Brand tokens remain #0d0d0d / #3cff19 / #4454a1. No external fonts or libraries. */
+#uf-home .cinematic-art {position:relative;overflow:hidden;isolation:isolate;background:#081317;}
+#uf-home .cinematic-art img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.035);translate:var(--resource-dx,0px) var(--resource-dy,0px);transition:transform .9s cubic-bezier(.22,1,.36,1),filter .65s;filter:saturate(.88) brightness(.92);}
+#uf-home .tool-art {aspect-ratio:4/3;border:1px solid #8cc89a2c;border-radius:14px;margin:0 0 19px;flex:none;}
+#uf-home .tool-art img {object-fit:cover;}
+#uf-home .tool-art::after {content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#06100fbf,transparent 23%),linear-gradient(140deg,#0d0d0d22,transparent 48%);}
+#uf-home .visual-note {position:absolute;left:12px;bottom:10px;right:10px;color:#deebe1;font-size:10px;font-weight:550;z-index:3;line-height:1.25;text-shadow:0 1px 5px #000;}
+#uf-home .cinema-sheen {position:absolute;inset:-45% -80%;z-index:2;pointer-events:none;opacity:0;transform:translateX(-62%) rotate(-16deg);background:linear-gradient(90deg,transparent 42%,#c2ffee18 49%,#baffc323 50%,transparent 58%);transition:transform 1s cubic-bezier(.22,1,.36,1),opacity .55s;}
+#uf-home .resource-expanded .academy-art {aspect-ratio:4/3;}
+#uf-home .resource-expanded .academy-art img {scale:1;filter:brightness(.94) saturate(.96);}
+#uf-home .resource-expanded .academy-art::after {background:linear-gradient(0deg,#101612a8 0%,transparent 34%);}
+#uf-home .resource-expanded .academy-copy {padding-top:25px;}
+#uf-home .resource-expanded .feature-card .art-icon {background:#071411d9;border-color:#8aff9250;}
+#uf-home .resource-expanded .tool-card h3 {margin-top:18px;}
+#uf-home .resource-expanded .feature-card p {min-height:3.3em;}
+#uf-home .latest-blogs {background:radial-gradient(ellipse at 90% 65%,#4454a113,transparent 48%),#0d0d0d;}
+#uf-home .latest-blogs .blog-card {display:flex;flex-direction:column;overflow:hidden;padding:0;}
+#uf-home .blog-art {aspect-ratio:16/10;flex:none;}
+#uf-home .blog-art img {object-fit:cover;}
+#uf-home .blog-category {position:absolute;top:14px;left:14px;z-index:3;padding:8px 11px;border:1px solid #7ef18155;border-radius:7px;font-size:10px;font-weight:750;letter-spacing:.045em;color:#e0ffde;background:#081513df;}
+#uf-home .blog-copy {padding:25px;display:flex;flex:1;flex-direction:column;min-width:0;}
+#uf-home .blog-copy time {font-size:11px;letter-spacing:.09em;color:#9bdc93;font-weight:650;}
+#uf-home .latest-blogs .blog-copy h3 {font-size:clamp(1.18rem,1.55vw,1.5rem);line-height:1.3;margin:12px 0;overflow-wrap:anywhere;}
+#uf-home .latest-blogs .blog-copy p {font-size:.92rem;line-height:1.65;margin:0 0 22px;min-height:0;}
+#uf-home .latest-blogs .blog-copy .resource-link {margin-top:auto;}
+/* The reviews now have the same content width as the rest of the homepage. */
+#uf-home .client-reviews {--ft-green:#3cff19;--ft-trust:#00b67a;--ft-blue:#4454a1;--ft-ease:cubic-bezier(.22,1,.36,1);padding:clamp(54px,6vw,88px) 0;position:relative;scroll-margin-top:90px;}
+#uf-home .client-review-shell {position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.8fr);gap:clamp(20px,2.5vw,38px);align-items:stretch;padding:clamp(24px,3vw,39px);border:1px solid #68c97862;border-radius:26px;overflow:hidden;background:radial-gradient(ellipse at 3% 80%,#244b2b55,transparent 40%),radial-gradient(ellipse at 97% 0%,#4454a130,transparent 60%),linear-gradient(125deg,#102018,#0d1415 55%,#101c20);box-shadow:0 20px 65px #0006,inset 0 1px 0 #ffffff0a;}
+#uf-home .client-review-shell::before {content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;padding:1px;background:linear-gradient(115deg,#3cff19a0,transparent 28%,#4454a12b 53%,transparent 75%,#73d0e778);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;z-index:1;}
+#uf-home .client-review-intro {position:relative;isolation:isolate;min-width:0;overflow:hidden;padding:9px 0 128px;}
+#uf-home .client-review-intro h2 {font-size:clamp(1.65rem,2.6vw,2.6rem);line-height:1.12;letter-spacing:-.045em;margin:8px 0 15px;position:relative;z-index:2;}
+#uf-home .client-review-intro p {font-size:.91rem;line-height:1.7;color:#b8c6be;max-width:300px;position:relative;z-index:2;margin:0;}
+#uf-home .review-world {position:absolute;left:-35px;right:-15px;bottom:-99px;height:235px;background:url('assets/footer-globe.svg') center/contain no-repeat;opacity:.62;filter:drop-shadow(0 0 14px #3cff192c);pointer-events:none;animation:review-world-drift 10s ease-in-out infinite alternate;z-index:-1;mask-image:linear-gradient(180deg,transparent,#000 32%);}
+@keyframes review-world-drift {from{transform:translate(-8px,7px) rotate(-5deg);}to{transform:translate(6px,-7px) rotate(5deg);}}
+#uf-home .client-review-content {position:relative;min-width:0;z-index:3;}
+#uf-home .client-reviews .footer-trust-strip {width:100%;margin:0 0 20px;padding:13px 19px;min-height:58px;justify-content:flex-start;gap:17px;border-radius:13px;border-color:#00b67a53;background:linear-gradient(110deg,#1230247a,#10221e,#142830);}
+#uf-home .client-reviews .footer-trust-strip h2 {font-size:20px;padding-right:16px;gap:6px;flex:none;}
+#uf-home .client-reviews .footer-trust-strip h2 span {font-size:26px;}
+#uf-home .client-reviews .footer-trust-strip p {font-size:12px;line-height:1.45;}
+#uf-home .client-reviews .footer-trust-strip small {font-size:10px;}
+#uf-home .client-reviews .footer-trust-panel {background:transparent;border:0;box-shadow:none;border-radius:0;padding:0;overflow:visible;}
+#uf-home .client-reviews .footer-trust-panel::before {display:none;}
+#uf-home .client-reviews .review-carousel {padding:0 14px 28px;}
+#uf-home .client-reviews .review-cards {grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;min-height:0;perspective:1300px;}
+#uf-home .client-reviews .review-card {position:relative;min-width:0;min-height:232px;padding:16px 15px;border:1px solid #93c9b04a;border-radius:13px;background:radial-gradient(ellipse at 95% 0%,#4454a126,transparent 50%),linear-gradient(140deg,#1a2925,#111c1b 65%,#13291d);isolation:isolate;box-shadow:inset 0 1px 0 #ffffff0a;}
+#uf-home .client-reviews .review-card::after {height:2px;filter:blur(1px);opacity:.45;background:linear-gradient(90deg,transparent,#3cff19,transparent);}
+#uf-home .client-reviews .footer-review-meta {gap:7px;flex-wrap:wrap;margin-bottom:14px;}
+#uf-home .client-reviews .rating {color:#00b67a;font-size:17px;margin:0;white-space:nowrap;letter-spacing:1px;line-height:1.1;}
+#uf-home .client-reviews .footer-review-date {font-size:9px;line-height:1.3;}
+#uf-home .client-reviews .footer-review-title {font-size:14px;line-height:1.35;margin:0 0 10px;}
+#uf-home .client-reviews .review-card blockquote {position:relative;z-index:3;font-size:12px;color:#cbd9cf;line-height:1.65;margin:0 0 20px;}
+#uf-home .client-reviews .footer-review-author {display:flex;align-items:center;gap:9px;padding:0;font-size:11px;line-height:1.4;overflow-wrap:anywhere;color:#bbf3b2;}
+#uf-home .review-initial {display:grid;place-items:center;flex:0 0 28px;height:28px;border:1px solid #3cff1944;background:#22492b;color:#d4ffc9;border-radius:50%;font-weight:750;}
+#uf-home .client-reviews .quote-glyph {position:absolute;right:13px;bottom:4px;top:auto;color:#3cff1922;font-size:55px;line-height:1;pointer-events:none;}
+#uf-home .client-reviews .carousel-arrow {width:30px;height:30px;font-size:22px;border-color:#3cff194e;background:#1a2b22;}
+#uf-home .client-reviews .arrow-left {left:-14px;}#uf-home .client-reviews .arrow-right {right:-14px;}
+#uf-home:not(.js-enabled) .client-reviews :is(.carousel-arrow,.carousel-dots){display:none;}
+@media(hover:hover) and (pointer:fine){
+ #uf-home:not(.motion-paused) .feature-card:hover .cinematic-art img {transform:scale(1.115);filter:brightness(1.05) saturate(1.1);}
+ #uf-home:not(.motion-paused) .feature-card:hover .cinema-sheen {transform:translateX(62%) rotate(-16deg);opacity:1;}
+ #uf-home:not(.motion-paused) .client-reviews .review-card:hover {border-color:#3cff19a0;box-shadow:0 12px 30px #0005,0 0 23px #3cff191c;}
+ #uf-home:not(.motion-paused) .client-reviews .review-card:hover .review-initial {background:#3cff19;color:#0b180c;}
+}
+#uf-home .review-initial {transition:background .45s,color .45s;}
+@media(max-width:1180px){
+ #uf-home .client-review-shell {grid-template-columns:minmax(0,1fr);gap:23px;}
+ #uf-home .client-review-intro {padding:0 0 8px;min-height:0;}
+ #uf-home .client-review-intro h2 br {display:none;}
+ #uf-home .client-review-intro h2 {font-size:clamp(1.8rem,3vw,2.65rem);}
+ #uf-home .client-review-intro p {max-width:660px;}
+ #uf-home .review-world {left:auto;right:0;bottom:-115px;width:230px;height:230px;opacity:.32;}
+ #uf-home .client-reviews .review-card {min-height:192px;}
+}
+@media(max-width:1000px){#uf-home .client-reviews .review-cards {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:640px){
+ #uf-home .client-review-shell {border-radius:19px;padding:21px 18px;gap:18px;}
+ #uf-home .client-reviews .footer-trust-strip {align-items:flex-start;text-align:left;flex-direction:column;gap:8px;padding:14px;margin-bottom:17px;}
+ #uf-home .client-reviews .footer-trust-strip h2 {padding:0;border:0;font-size:21px;}
+ #uf-home .client-reviews .review-carousel {padding:0 6px 25px;}
+ #uf-home .client-reviews .arrow-left {left:-10px;}#uf-home .client-reviews .arrow-right {right:-10px;}
+ #uf-home .client-reviews .review-card {padding:17px 16px;min-height:190px;}
+ #uf-home .tool-art {margin-bottom:17px;}
+ #uf-home .resource-expanded .feature-card p {min-height:0;}
+ #uf-home .blog-copy {padding:22px;}
+}
+@media(max-width:600px){#uf-home .client-reviews .review-cards {grid-template-columns:minmax(0,1fr);}}
+#uf-home.motion-paused .cinematic-art img,#uf-home.motion-paused .cinema-sheen,#uf-home.motion-paused .review-world {animation:none!important;transition:none!important;translate:none!important;transform:none!important;}
+#uf-home.motion-paused .cinema-sheen {opacity:0!important;}
+#uf-home .offscreen-motion .review-world {animation-play-state:paused;}
+@media(prefers-reduced-motion:reduce){#uf-home .cinematic-art img,#uf-home .cinema-sheen,#uf-home .review-world {animation:none!important;transition:none!important;translate:none!important;transform:none!important;}#uf-home .cinema-sheen {display:none;}}

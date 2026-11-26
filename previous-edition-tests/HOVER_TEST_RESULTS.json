@@ -1,0 +1,178 @@
+{
+  "method": "Chromium with identical source CSS/JS and asset bytes inlined in a browser document; direct file navigation blocked by environment.",
+  "scope": "Standalone frontend hover regression tests; not live Angular deployment or performance benchmarking.",
+  "checks": {
+    "cards": {
+      ".account-card": {
+        "hover": {
+          "active": true,
+          "angle": "1.903deg",
+          "lift": "-5.96px",
+          "x": "67.88%",
+          "dx": "",
+          "btn": "",
+          "rotate": "0.6139 0.7894 0 1.903deg",
+          "translate": "0px -5.96px",
+          "light": "0.993985"
+        },
+        "reset": "PASS"
+      },
+      ".tool-card": {
+        "hover": {
+          "active": true,
+          "angle": "1.908deg",
+          "lift": "-5.98px",
+          "x": "67.93%",
+          "dx": "",
+          "btn": "",
+          "rotate": "0.6139 0.7894 0 1.908deg",
+          "translate": "0px -5.98px",
+          "light": "0.999966"
+        },
+        "reset": "PASS"
+      },
+      ".academy-card": {
+        "hover": {
+          "active": true,
+          "angle": "1.908deg",
+          "lift": "-5.98px",
+          "x": "67.93%",
+          "dx": "",
+          "btn": "",
+          "rotate": "0.6139 0.7894 0 1.908deg",
+          "translate": "0px -5.98px",
+          "light": "0.999881"
+        },
+        "reset": "PASS"
+      },
+      ".review-card": {
+        "hover": {
+          "active": true,
+          "angle": "1.180deg",
+          "lift": "-5.97px",
+          "x": "67.91%",
+          "dx": "",
+          "btn": "",
+          "rotate": "0.6139 0.7894 0 1.18deg",
+          "translate": "0px -5.97px",
+          "light": "0.999966"
+        },
+        "reset": "PASS"
+      },
+      "pause_resume": "PASS",
+      "errors": []
+    },
+    "visuals": {
+      ".platform-stage": {
+        "hover": {
+          "active": true,
+          "angle": "1.361deg",
+          "lift": "",
+          "x": "",
+          "dx": "3.22px",
+          "btn": "",
+          "rotate": "none",
+          "translate": "none",
+          "light": null
+        },
+        "reset": "PASS"
+      },
+      ".hero-visual": {
+        "hover": {
+          "active": true,
+          "angle": "0.000deg",
+          "lift": "",
+          "x": "",
+          "dx": "3.21px",
+          "btn": "",
+          "rotate": "none",
+          "translate": "none",
+          "light": null
+        },
+        "reset": "PASS"
+      },
+      ".hero-actions .button": {
+        "hover": {
+          "active": true,
+          "angle": "",
+          "lift": "",
+          "x": "",
+          "dx": "",
+          "btn": "1.25px",
+          "rotate": "none",
+          "translate": "1.25px -0.56px",
+          "light": null
+        },
+        "reset": "PASS"
+      },
+      ".partner-art": {
+        "hover": {
+          "active": true,
+          "angle": "0.000deg",
+          "lift": "",
+          "x": "",
+          "dx": "1.43px",
+          "btn": "",
+          "rotate": "none",
+          "translate": "none",
+          "light": null
+        },
+        "reset": "PASS"
+      },
+      ".cta-panel": {
+        "hover": {
+          "active": true,
+          "angle": "",
+          "lift": "",
+          "x": "67.91%",
+          "dx": "",
+          "btn": "",
+          "rotate": "none",
+          "translate": "none",
+          "light": "0.999881"
+        },
+        "reset": "PASS"
+      },
+      "errors": []
+    },
+    "responsive": {
+      "1440": {
+        "overflow": 0,
+        "market": "PASS",
+        "touch_hover_disabled": false,
+        "errors": []
+      },
+      "1024": {
+        "overflow": 0,
+        "market": "PASS",
+        "touch_hover_disabled": false,
+        "errors": []
+      },
+      "768": {
+        "overflow": 0,
+        "market": "PASS",
+        "touch_hover_disabled": true,
+        "errors": []
+      },
+      "390": {
+        "overflow": 0,
+        "market": "PASS",
+        "touch_hover_disabled": true,
+        "errors": []
+      },
+      "360": {
+        "overflow": 0,
+        "market": "PASS",
+        "touch_hover_disabled": true,
+        "errors": []
+      }
+    },
+    "chart": {
+      "market_combinations": 24,
+      "chart_tooltip": "O 84.19 H 84.42 L 83.94 C 84.16",
+      "dynamic_review_hover": "PASS",
+      "errors": [],
+      "reduced_motion": "PASS"
+    }
+  }
+}

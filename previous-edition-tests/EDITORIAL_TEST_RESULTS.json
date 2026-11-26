@@ -1,0 +1,249 @@
+{
+  "method": "Chromium set_content with source CSS/JS and local assets embedded byte-for-byte; direct file URL blocked by environment policy.",
+  "viewport": [
+    {
+      "w": 1440,
+      "overflow": 0,
+      "cards": [
+        {
+          "w": 412,
+          "h": 577
+        },
+        {
+          "w": 412,
+          "h": 577
+        },
+        {
+          "w": 412,
+          "h": 577
+        },
+        {
+          "w": 412,
+          "h": 545
+        },
+        {
+          "w": 412,
+          "h": 545
+        },
+        {
+          "w": 412,
+          "h": 545
+        },
+        {
+          "w": 412,
+          "h": 554
+        },
+        {
+          "w": 412,
+          "h": 554
+        },
+        {
+          "w": 412,
+          "h": 554
+        }
+      ],
+      "badImages": 0,
+      "resourceOverflow": 0
+    },
+    {
+      "w": 1024,
+      "overflow": 0,
+      "cards": [
+        {
+          "w": 308,
+          "h": 487
+        },
+        {
+          "w": 308,
+          "h": 487
+        },
+        {
+          "w": 308,
+          "h": 487
+        },
+        {
+          "w": 308,
+          "h": 457
+        },
+        {
+          "w": 308,
+          "h": 457
+        },
+        {
+          "w": 308,
+          "h": 457
+        },
+        {
+          "w": 308,
+          "h": 524
+        },
+        {
+          "w": 308,
+          "h": 524
+        },
+        {
+          "w": 308,
+          "h": 524
+        }
+      ],
+      "badImages": 0,
+      "resourceOverflow": 0
+    },
+    {
+      "w": 768,
+      "overflow": 0,
+      "cards": [
+        {
+          "w": 348,
+          "h": 517
+        },
+        {
+          "w": 348,
+          "h": 517
+        },
+        {
+          "w": 348,
+          "h": 517
+        },
+        {
+          "w": 348,
+          "h": 487
+        },
+        {
+          "w": 348,
+          "h": 487
+        },
+        {
+          "w": 348,
+          "h": 487
+        },
+        {
+          "w": 348,
+          "h": 525
+        },
+        {
+          "w": 348,
+          "h": 525
+        },
+        {
+          "w": 348,
+          "h": 500
+        }
+      ],
+      "badImages": 0,
+      "resourceOverflow": 0
+    },
+    {
+      "w": 390,
+      "overflow": 0,
+      "cards": [
+        {
+          "w": 352,
+          "h": 523
+        },
+        {
+          "w": 352,
+          "h": 523
+        },
+        {
+          "w": 352,
+          "h": 523
+        },
+        {
+          "w": 352,
+          "h": 491
+        },
+        {
+          "w": 352,
+          "h": 491
+        },
+        {
+          "w": 352,
+          "h": 491
+        },
+        {
+          "w": 352,
+          "h": 497
+        },
+        {
+          "w": 352,
+          "h": 497
+        },
+        {
+          "w": 352,
+          "h": 497
+        }
+      ],
+      "badImages": 0,
+      "resourceOverflow": 0
+    },
+    {
+      "w": 360,
+      "overflow": 0,
+      "cards": [
+        {
+          "w": 328,
+          "h": 503
+        },
+        {
+          "w": 328,
+          "h": 503
+        },
+        {
+          "w": 328,
+          "h": 503
+        },
+        {
+          "w": 328,
+          "h": 469
+        },
+        {
+          "w": 328,
+          "h": 469
+        },
+        {
+          "w": 328,
+          "h": 469
+        },
+        {
+          "w": 328,
+          "h": 506
+        },
+        {
+          "w": 328,
+          "h": 482
+        },
+        {
+          "w": 328,
+          "h": 506
+        }
+      ],
+      "badImages": 0,
+      "resourceOverflow": 0
+    }
+  ],
+  "interactions": {
+    "resource_hover_and_reset": "9/9",
+    "review_controls": true,
+    "chart_combinations": 24,
+    "pause_disables_resource_hover": true,
+    "reduced_motion": true
+  },
+  "errors": [],
+  "static_comparison": {
+    "previous_anchor_references": 87,
+    "current_anchor_references": 91,
+    "unchanged_sections": [
+      "accounts",
+      "platforms",
+      "market-ticker",
+      "markets",
+      "why-us",
+      "partnership",
+      "cta"
+    ],
+    "footer_content_preserved": true,
+    "review_instance_count": 1,
+    "final_change_after_browser_test": "Blog kicker label now explicitly says LATEST BLOGS; no layout/style or JS changes."
+  }
+}

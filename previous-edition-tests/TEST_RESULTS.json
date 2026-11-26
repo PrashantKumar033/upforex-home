@@ -1,0 +1,80 @@
+{
+  "method": "Chromium with identical local assets and source inlined; file navigation is blocked in test environment.",
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": 0,
+      "sections": 11,
+      "candles": 44,
+      "globeMoves": true,
+      "chartSwitch": "PASS",
+      "chartCombinations": 24,
+      "chartKeyboard": "PASS",
+      "reviews": "PASS",
+      "pauseMotion": "PASS",
+      "resumeMotion": "PASS",
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "overflow": 0,
+      "sections": 11,
+      "candles": 44,
+      "globeMoves": true,
+      "chartSwitch": "PASS",
+      "chartCombinations": 24,
+      "chartKeyboard": "PASS",
+      "reviews": "PASS",
+      "pauseMotion": "PASS",
+      "resumeMotion": "PASS",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "overflow": 0,
+      "sections": 11,
+      "candles": 44,
+      "globeMoves": true,
+      "mobileMenu": "PASS",
+      "chartSwitch": "PASS",
+      "chartCombinations": 24,
+      "chartKeyboard": "PASS",
+      "reviews": "PASS",
+      "pauseMotion": "PASS",
+      "resumeMotion": "PASS",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "sections": 11,
+      "candles": 44,
+      "globeMoves": true,
+      "mobileMenu": "PASS",
+      "chartSwitch": "PASS",
+      "chartCombinations": 24,
+      "chartKeyboard": "PASS",
+      "reviews": "PASS",
+      "pauseMotion": "PASS",
+      "resumeMotion": "PASS",
+      "errors": []
+    },
+    {
+      "width": 360,
+      "overflow": 0,
+      "sections": 11,
+      "candles": 44,
+      "globeMoves": true,
+      "mobileMenu": "PASS",
+      "chartSwitch": "PASS",
+      "chartCombinations": 24,
+      "chartKeyboard": "PASS",
+      "reviews": "PASS",
+      "pauseMotion": "PASS",
+      "resumeMotion": "PASS",
+      "errors": []
+    }
+  ],
+  "reducedMotion": "PASS",
+  "scope": "Standalone front-end prototype only. No production API or Angular integration tested."
+}

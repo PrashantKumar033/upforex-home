@@ -1,0 +1,201 @@
+{
+  "static": {
+    "old_link_count": 91,
+    "new_link_count": 95,
+    "all_original_links_preserved": true,
+    "other_sections_unchanged": true,
+    "footer_links": 24,
+    "local_image_paths": "pass"
+  },
+  "method": "Chromium with identical HTML, CSS, JavaScript, images embedded. Direct file navigation blocked by environment.",
+  "responsive": [
+    {
+      "viewport": 1440,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "images": [
+        true,
+        true,
+        true
+      ],
+      "revealed": true,
+      "cards": [
+        {
+          "w": 699,
+          "h": 594,
+          "copyOverflow": false
+        },
+        {
+          "w": 568,
+          "h": 285,
+          "copyOverflow": false
+        },
+        {
+          "w": 568,
+          "h": 285,
+          "copyOverflow": false
+        }
+      ],
+      "grid": "699.125px 568.406px",
+      "js_errors": []
+    },
+    {
+      "viewport": 1024,
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        true,
+        true,
+        true
+      ],
+      "revealed": true,
+      "cards": [
+        {
+          "w": 496,
+          "h": 547,
+          "copyOverflow": false
+        },
+        {
+          "w": 451,
+          "h": 265,
+          "copyOverflow": false
+        },
+        {
+          "w": 451,
+          "h": 265,
+          "copyOverflow": false
+        }
+      ],
+      "grid": "495.828px 450.766px",
+      "js_errors": []
+    },
+    {
+      "viewport": 768,
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        true,
+        true,
+        true
+      ],
+      "revealed": true,
+      "cards": [
+        {
+          "w": 716,
+          "h": 460,
+          "copyOverflow": false
+        },
+        {
+          "w": 350,
+          "h": 445,
+          "copyOverflow": false
+        },
+        {
+          "w": 350,
+          "h": 445,
+          "copyOverflow": false
+        }
+      ],
+      "grid": "716px",
+      "js_errors": []
+    },
+    {
+      "viewport": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        true,
+        true,
+        true
+      ],
+      "revealed": true,
+      "cards": [
+        {
+          "w": 352,
+          "h": 535,
+          "copyOverflow": false
+        },
+        {
+          "w": 352,
+          "h": 406,
+          "copyOverflow": false
+        },
+        {
+          "w": 352,
+          "h": 406,
+          "copyOverflow": false
+        }
+      ],
+      "grid": "352px",
+      "js_errors": []
+    },
+    {
+      "viewport": 360,
+      "width": 360,
+      "scrollWidth": 360,
+      "images": [
+        true,
+        true,
+        true
+      ],
+      "revealed": true,
+      "cards": [
+        {
+          "w": 328,
+          "h": 545,
+          "copyOverflow": false
+        },
+        {
+          "w": 328,
+          "h": 414,
+          "copyOverflow": false
+        },
+        {
+          "w": 328,
+          "h": 414,
+          "copyOverflow": false
+        }
+      ],
+      "grid": "328px",
+      "js_errors": []
+    }
+  ],
+  "hover": [
+    {
+      "card": 1,
+      "active": {
+        "active": true,
+        "light": "64.92%",
+        "angle": "2.182deg",
+        "parallax": "2.08px"
+      },
+      "reset": true
+    },
+    {
+      "card": 2,
+      "active": {
+        "active": true,
+        "light": "64.80%",
+        "angle": "1.311deg",
+        "parallax": "2.05px"
+      },
+      "reset": true
+    },
+    {
+      "card": 3,
+      "active": {
+        "active": true,
+        "light": "64.91%",
+        "angle": "1.321deg",
+        "parallax": "2.08px"
+      },
+      "reset": true
+    }
+  ],
+  "regression": {
+    "market_period_combinations": 24,
+    "review_arrow": true,
+    "pause_resume": true,
+    "js_errors": []
+  }
+}

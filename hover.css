@@ -1,0 +1,121 @@
+/* UPFOREX Vision — hover refinement. All original sections, assets and brand tokens stay intact.
+   Individual transform properties compose with the existing scroll/float animations. */
+#uf-home { --hover-ease: cubic-bezier(.22,1,.36,1); }
+#uf-home .hover-surface { --hx:50%; --hy:50%; }
+/* A small, local light layer follows the pointer. It never intercepts clicks. */
+#uf-home .hover-light {
+  position:absolute; inset:0; z-index:2; border-radius:inherit; overflow:hidden;
+  pointer-events:none; opacity:0; transition:opacity .55s var(--hover-ease);
+  background:radial-gradient(ellipse 230px 180px at var(--hx,50%) var(--hy,50%),rgba(60,255,25,.095),rgba(68,84,161,.035) 45%,transparent 78%);
+}
+#uf-home .hover-light::after {
+  content:""; position:absolute; inset:0; border-radius:inherit; padding:1px;
+  background:radial-gradient(ellipse 190px 125px at var(--hx,50%) var(--hy,50%),#b1ff8ede,#3cff1966 40%,transparent 85%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor; mask-composite:exclude;
+}
+#uf-home .hover-active > .hover-light {opacity:1;}
+#uf-home .account-cards,#uf-home .feature-cards {perspective:1150px;}
+#uf-home .account-card,#uf-home .feature-card,#uf-home .review-card {
+  translate:0 var(--hover-lift,0px);
+  rotate:var(--hover-axis-x,0) var(--hover-axis-y,1) 0 var(--hover-angle,0deg);
+  transition:opacity .78s var(--ease),transform .95s var(--ease),border-color .38s,box-shadow .55s var(--hover-ease),background-color .4s;
+}
+/* Old fixed hover translation is superseded by the damped, cursor-directed lift. */
+#uf-home.js-enabled .feature-card.animate-in.in-view:hover {transform:translate3d(0,0,0) scale(1);transition-delay:0s;}
+#uf-home .feature-card {isolation:isolate;}
+#uf-home .review-card .avatar {transition:box-shadow .45s,scale .48s var(--hover-ease),filter .4s;}
+#uf-home .review-card .rating {transition:color .35s,letter-spacing .4s var(--hover-ease);}
+#uf-home .review-card .quote-glyph {transition:color .4s,translate .5s var(--hover-ease),scale .5s var(--hover-ease);}
+#uf-home .account-symbol {transition:translate .55s var(--hover-ease),scale .55s var(--hover-ease),filter .4s;}
+#uf-home .feature-card .tool-icon {transition:transform .5s var(--hover-ease),background .35s,box-shadow .5s;}
+#uf-home .feature-card .art-icon {transition:translate .55s var(--hover-ease),background .35s,border-color .35s;}
+#uf-home .feature-card .academy-art img {transition:transform 1s var(--hover-ease),filter .8s var(--hover-ease);}
+#uf-home .account-link,#uf-home .feature-link {transition:color .3s,border-color .4s;}
+#uf-home .account-link span,#uf-home .feature-link i {transition:transform .45s var(--hover-ease),color .3s;}
+#uf-home .tool-card .mini-calendar b {transition:background .35s,border-color .35s;}
+#uf-home .tool-card .mini-profit svg {transition:filter .5s;}
+/* Pointer-parallax on the visual layers, never on the outer layout or OHLC chart. */
+#uf-home .platform-stage .device-set {translate:var(--hover-device-x,0px) var(--hover-device-y,0px);rotate:var(--hover-axis-x,0) var(--hover-axis-y,1) 0 var(--hover-angle,0deg);}
+#uf-home .platform-stage .stage-aura {opacity:.8;transition:opacity .6s var(--hover-ease);}
+#uf-home .platform-stage .screen-glint {background:linear-gradient(112deg,transparent 24%,#dcfff914 48%,transparent 70%);transform:translateX(-120%);transition:transform .95s var(--hover-ease);}
+#uf-home .platform-stage .stage-tag {transition:border-color .4s,box-shadow .5s,translate .55s var(--hover-ease);}
+#uf-home .hero-visual .globe-canvas {translate:var(--hover-device-x,0px) var(--hover-device-y,0px);transition:filter .5s;}
+#uf-home .hero-visual .floating-market {translate:calc(var(--hover-device-x,0px) * -0.65) calc(var(--hover-device-y,0px) * -0.65);transition:box-shadow .45s,border-color .4s,scale .55s var(--hover-ease);}
+#uf-home .partner-art .partner-image {translate:var(--hover-device-x,0px) var(--hover-device-y,0px);}
+/* Buttons: a moving gleam, subtle magnetic motion and directional arrow. */
+#uf-home .button {translate:var(--hover-button-x,0px) var(--hover-button-y,0px);transition:transform .48s var(--hover-ease),background .38s,color .38s,box-shadow .48s var(--hover-ease),border-color .4s;}
+#uf-home .button::before {inset:-60% auto -60% -65%;width:46%;background:linear-gradient(90deg,transparent,#fff5,transparent);transform:translateX(0) rotate(19deg);transition:transform .8s var(--hover-ease),opacity .3s;opacity:0;}
+#uf-home .button span {transition:transform .45s var(--hover-ease);}
+#uf-home .desktop-nav a,#uf-home .site-footer a {transition:color .35s;}
+#uf-home .platform-pill {transition:transform .5s var(--hover-ease),border-color .4s,background .4s,color .35s,box-shadow .45s;}
+#uf-home .platform-pill img {transition:scale .45s var(--hover-ease);}
+#uf-home .stat-icon,#uf-home .hero-benefits svg {transition:translate .5s var(--hover-ease),scale .5s var(--hover-ease),filter .5s;}
+#uf-home .stat-item strong,#uf-home .advantage-item h3 {transition:color .4s;}
+#uf-home .advantage-item svg {transition:transform .55s var(--hover-ease),filter .45s;}
+#uf-home .market-tab {transition:background .38s,border-color .38s,box-shadow .45s,color .3s;}
+#uf-home .market-tab-icon,#uf-home .market-tab .tab-title,#uf-home .market-tab .tab-symbol {transition:translate .45s var(--hover-ease),scale .45s var(--hover-ease),color .3s,opacity .3s;}
+#uf-home .time-pill,#uf-home .carousel-arrow {transition:transform .42s var(--hover-ease),background .35s,color .3s,border-color .35s,box-shadow .4s;}
+#uf-home .carousel-dots button {transition:width .35s var(--hover-ease),opacity .3s,background .3s,scale .35s var(--hover-ease);}
+#uf-home .terminal-frame,#uf-home .cta-panel {transition:opacity .78s var(--ease),transform .95s var(--ease),border-color .45s,box-shadow .55s;}
+/* Keyboard users get a clear highlight without having to use a pointer. */
+#uf-home .account-card:focus-visible,#uf-home .account-card:focus-within,#uf-home .feature-card:focus-visible {border-color:#3cff198c;box-shadow:0 0 0 1px #3cff1926,0 12px 28px #0005;}
+#uf-home .button:focus-visible,#uf-home .platform-pill:focus-visible,#uf-home .market-tab:focus-visible,#uf-home .time-pill:focus-visible {outline:2px solid #b6ffa7;outline-offset:3px;}
+@media (hover:hover) and (pointer:fine) {
+  #uf-home:not(.motion-paused) .account-card.hover-active,#uf-home:not(.motion-paused) .feature-card.hover-active,#uf-home:not(.motion-paused) .review-card.hover-active {border-color:#82ff6880;box-shadow:0 18px 36px #0008,0 0 28px #3cff1918,inset 0 1px 0 #a5ff8826;z-index:4;}
+  #uf-home:not(.motion-paused) .account-card:hover .account-symbol {translate:0 -4px;scale:1.12;filter:drop-shadow(0 0 12px #3cff1970);}
+  #uf-home:not(.motion-paused) .account-card:hover .account-link,#uf-home:not(.motion-paused) .feature-card:hover .feature-link {color:#c5ffb8;border-color:#3cff1945;}
+  #uf-home:not(.motion-paused) .account-card:hover .account-link span,#uf-home:not(.motion-paused) .feature-card:hover .feature-link i {transform:translate(4px,-3px);}
+  #uf-home:not(.motion-paused) .tool-card:hover .tool-icon {transform:translateY(-3px) rotate(-7deg) scale(1.1);background:#3cff191b;box-shadow:0 0 17px #3cff1926;}
+  #uf-home:not(.motion-paused) .tool-card:hover .mini-calendar b.highlight {background:#3cff196b;border-color:#82ff68a0;}
+  #uf-home:not(.motion-paused) .tool-card:hover .mini-profit svg {filter:drop-shadow(0 0 6px #3cff1988);}
+  #uf-home:not(.motion-paused) .academy-card:hover .academy-art img {transform:scale(1.12);filter:saturate(.95) brightness(.99);}
+  #uf-home:not(.motion-paused) .academy-card:hover .art-icon {translate:0 -3px;}
+  #uf-home:not(.motion-paused) .review-card:hover .avatar {scale:1.1;box-shadow:0 0 16px #3cff193c;}
+  #uf-home:not(.motion-paused) .review-card:hover .rating {color:#c2ff9a;letter-spacing:1.6px;}
+  #uf-home:not(.motion-paused) .review-card:hover .quote-glyph {translate:0 -4px;scale:1.12;color:#3cff1948;}
+  #uf-home:not(.motion-paused) .platform-stage:hover .stage-aura {opacity:1;}
+  #uf-home:not(.motion-paused) .platform-stage:hover .screen-glint {transform:translateX(120%);}
+  #uf-home:not(.motion-paused) .platform-stage:hover .stage-tag {border-color:#3cff1970;box-shadow:0 0 22px #3cff1923;translate:0 -3px;}
+  #uf-home:not(.motion-paused) .hero-visual:hover .globe-canvas {filter:drop-shadow(0 0 26px #559bde4d) drop-shadow(0 0 28px #3cff1950);}
+  #uf-home:not(.motion-paused) .floating-market:hover {scale:1.045;border-color:#3cff19ad;box-shadow:0 10px 30px #0007,0 0 15px #3cff1927;}
+  #uf-home:not(.motion-paused) .button:hover {transform:translateY(-3px);}
+  #uf-home:not(.motion-paused) .button:hover::before {opacity:1;transform:translateX(380%) rotate(19deg);}
+  #uf-home:not(.motion-paused) .button:hover span {transform:translateX(5px);}
+  #uf-home:not(.motion-paused) .button:active {transform:translateY(0) scale(.98);}
+  #uf-home .platform-pill:hover {background:#223222;border-color:#3cff197a;box-shadow:0 5px 20px #3cff191c;}
+  #uf-home:not(.motion-paused) .platform-pill:hover img {scale:1.075;}
+  #uf-home:not(.motion-paused) .stat-item:hover .stat-icon,#uf-home:not(.motion-paused) .hero-benefits>div:hover svg {translate:0 -4px;scale:1.13;filter:drop-shadow(0 0 9px #3cff1970);}
+  #uf-home .stat-item:hover strong,#uf-home .advantage-item:hover h3 {color:#b0ff9e;}
+  #uf-home:not(.motion-paused) .advantage-item:hover svg {transform:translateY(-5px) rotate(-5deg) scale(1.12);filter:drop-shadow(0 0 11px #3cff1966);}
+  #uf-home .market-tab:hover {color:#efffeb;box-shadow:inset 0 0 16px #3cff1908;}
+  #uf-home:not(.motion-paused) .market-tab:hover .market-tab-icon {translate:0 -2px;scale:1.12;opacity:1;}
+  #uf-home:not(.motion-paused) .market-tab:hover .tab-title {translate:4px 0;}
+  #uf-home:not(.motion-paused) .market-tab:hover .tab-symbol {translate:3px -3px;color:#a7ff98;}
+  #uf-home .time-pill:hover {background:#34572f;color:#e6ffdf;}
+  #uf-home:not(.motion-paused) .time-pill:hover {transform:translateY(-2px);}
+  #uf-home .terminal-frame:hover {border-color:#3cff194c;box-shadow:0 0 22px #3cff1909;}
+  #uf-home .carousel-arrow:hover {background:#34572f;border-color:#3cff1980;box-shadow:0 0 12px #3cff192b;}
+  #uf-home:not(.motion-paused) .carousel-dots button:hover {opacity:1;scale:1.16;}
+  #uf-home .cta-panel:hover {border-color:#3cff1980;box-shadow:0 10px 30px #0005,0 0 22px #3cff1910;}
+  #uf-home .site-footer a:hover {color:var(--green);}
+  #uf-home .ticker-section:hover .ticker-track {animation-play-state:paused;}
+}
+/* Pause control / OS preference: no cursor movement, no moving hover gleam.
+   Keep static color and focus states; preserve positioning of the original visuals. */
+#uf-home.motion-paused .hover-light {opacity:0!important;transition:none!important;}
+#uf-home.motion-paused :is(.account-card,.feature-card,.review-card,.button,.device-set,.globe-canvas,.floating-market,.partner-image,.account-symbol,.stage-tag,.avatar,.quote-glyph,.market-tab-icon,.tab-title,.tab-symbol,.stat-icon,.hero-benefits svg,.art-icon) {translate:none!important;rotate:none!important;scale:none!important;}
+#uf-home.motion-paused :is(.button,.platform-pill,.carousel-arrow,.tool-icon,.account-link span,.feature-link i,.advantage-item svg,.academy-art img,.partner-image,.time-pill,.market-tab):hover,
+#uf-home.motion-paused :is(.account-card:hover .account-link span,.feature-card:hover .tool-icon,.feature-card:hover .feature-link i,.academy-card:hover .academy-art img,.partner-art:hover .partner-image,.advantage-item:hover svg,.button:hover span) {transform:none!important;transition:none!important;}
+#uf-home.motion-paused .button::before,#uf-home.motion-paused .screen-glint {opacity:0!important;transition:none!important;}
+@media (hover:none),(pointer:coarse) {
+  #uf-home .hover-light {display:none!important;}
+  #uf-home :is(.button,.platform-pill,.carousel-arrow,.market-tab):hover {transform:none;}
+  #uf-home .feature-card:hover .tool-icon,#uf-home .feature-card:hover .feature-link i,#uf-home .academy-card:hover .academy-art img,#uf-home .partner-art:hover .partner-image,#uf-home .advantage-item:hover svg {transform:none;}
+  #uf-home .button:hover::before {opacity:0;}
+}
+@media(prefers-reduced-motion:reduce) {
+  #uf-home .hover-light {display:none!important;}
+  #uf-home :is(.account-card,.feature-card,.review-card,.button,.platform-pill,.market-tab,.time-pill,.carousel-arrow,.device-set,.globe-canvas,.floating-market,.partner-image,.account-symbol,.tool-icon,.feature-link i,.account-link span,.advantage-item svg,.stage-tag,.avatar,.quote-glyph,.market-tab-icon,.tab-title,.tab-symbol,.stat-icon,.hero-benefits svg,.art-icon) {translate:none!important;rotate:none!important;scale:none!important;transition:none!important;}
+  #uf-home .button::before,#uf-home .screen-glint {opacity:0!important;}
+}

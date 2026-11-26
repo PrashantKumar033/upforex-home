@@ -1,0 +1,42 @@
+{
+  "1440": {
+    "24_navigation": true,
+    "4_social": true,
+    "5_legal_paragraphs": true,
+    "carousel": true,
+    "horizontal_overflow": 0,
+    "errors": []
+  },
+  "1024": {
+    "24_navigation": true,
+    "4_social": true,
+    "5_legal_paragraphs": true,
+    "carousel": true,
+    "horizontal_overflow": 0,
+    "errors": []
+  },
+  "768": {
+    "24_navigation": true,
+    "4_social": true,
+    "5_legal_paragraphs": true,
+    "carousel": true,
+    "horizontal_overflow": 0,
+    "errors": []
+  },
+  "390": {
+    "24_navigation": true,
+    "4_social": true,
+    "5_legal_paragraphs": true,
+    "carousel": true,
+    "horizontal_overflow": 0,
+    "errors": []
+  },
+  "360": {
+    "24_navigation": true,
+    "4_social": true,
+    "5_legal_paragraphs": true,
+    "carousel": true,
+    "horizontal_overflow": 0,
+    "errors": []
+  }
+}

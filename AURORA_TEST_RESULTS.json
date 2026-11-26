@@ -1,0 +1,73 @@
+{
+  "test_method": "Chromium with identical source and local assets embedded; direct file navigation blocked by browser policy.",
+  "static": {
+    "previous_links": 95,
+    "new_links": 97,
+    "removed": {},
+    "footer_unchanged": true,
+    "other_named_sections_unchanged": true,
+    "local_assets_and_scripts_present": true
+  },
+  "responsive": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingClips": false,
+      "stageInViewport": true,
+      "buttons": 4,
+      "footer": 24
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headingClips": false,
+      "stageInViewport": true,
+      "buttons": 4,
+      "footer": 24
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "headingClips": false,
+      "stageInViewport": true,
+      "buttons": 4,
+      "footer": 24
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "headingClips": false,
+      "stageInViewport": true,
+      "buttons": 4,
+      "footer": 24
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "headingClips": false,
+      "stageInViewport": true,
+      "buttons": 4,
+      "footer": 24
+    }
+  ],
+  "interactions": {
+    "hero_pointer": {
+      "intensity": 0.968,
+      "parallax": "7.83px",
+      "canvasWidth": 595
+    },
+    "hero_market_select": true,
+    "hero_market_scroll": true,
+    "pause": true,
+    "chart_combinations": {
+      "n": 24,
+      "pass": 24
+    },
+    "reviews": true,
+    "resume": true,
+    "account_hover": true,
+    "account_reset": true,
+    "reduced_motion": true
+  },
+  "js_errors": []
+}
